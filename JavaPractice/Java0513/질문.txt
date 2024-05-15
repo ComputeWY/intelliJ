@@ -1,0 +1,23 @@
+1. 
+public static final Comparator<PhyscData>
+HEIGHT_ORDER = new HeightOrderComparator();
+
+이 부분 책에서는 오름차순으로 정렬하기위한 comparator라고 나와있는데 잘 이해되지않음
+제네릭메서드 같은데...
+
+2.
+
+int idx = Arrays.binarySearch(
+
+x,
+
+new PhyscData("", height, 0.0),
+
+PhyscData.HEIGHT_ORDER
+
+);
+
+앞에 2개의 매개변수는 이해됨 (먼저는 객체 자체, 그 뒤는 Height만을 비교하는것)
+마지막 PhyscData.HEIGHT_ORDER가 무엇을 의미하는것인지 모르겠음
+
+전체적으로 idx의 값이 -1일 경우 탐색하는 값이 없음정도는 이해함
